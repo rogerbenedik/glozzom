@@ -160,54 +160,70 @@
                 </div>
             </div>
         </div>
-        </section>
-        <setion id="gallery" class="py-5">
-            <div class="container">
-                <h1 class="text-center">Photo Gallery</h1>
-                <p class="text-center">Check out our photos</p>
-                <div class="row mb-4">
-                    <div class="col-md-4">
-                        <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox"
-                            data-gallery="img-gallery" data-height="560" data-width="560">
-                            <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="https://source.unsplash.com/random/561x561" data-toggle="lightbox"
-                            data-gallery="img-gallery" data-height="561" data-width="561">
-                            <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox"
-                            data-gallery="img-gallery" data-height="562" data-width="562">
-                            <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
-                        </a>
-                    </div>
+    </section>
+    <setion id="gallery" class="py-5">
+        <div class="container">
+            <h1 class="text-center">Photo Gallery</h1>
+            <p class="text-center">Check out our photos</p>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox"
+                        data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <div class="row mb-4">
-                    <div class="col-md-4">
-                        <a href="https://source.unsplash.com/random/563x563" data-toggle="lightbox"
-                            data-gallery="img-gallery" data-height="563" data-width="563">
-                            <img src="https://source.unsplash.com/random/563x563" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="https://source.unsplash.com/random/565x565" data-toggle="lightbox"
-                            data-gallery="img-gallery" data-height="565" data-width="565">
-                            <img src="https://source.unsplash.com/random/565x565" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="https://source.unsplash.com/random/566x566" data-toggle="lightbox"
-                            data-gallery="img-gallery" data-height="566" data-width="566">
-                            <img src="https://source.unsplash.com/random/566x566" alt="" class="img-fluid">
-                        </a>
-                    </div>
+                <div class="col-md-4">
+                    <a href="https://source.unsplash.com/random/561x561" data-toggle="lightbox"
+                        data-gallery="img-gallery" data-height="561" data-width="561">
+                        <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid">
+                    </a>
                 </div>
-
+                <div class="col-md-4">
+                    <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox"
+                        data-gallery="img-gallery" data-height="562" data-width="562">
+                        <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
+                    </a>
+                </div>
             </div>
-        </setion>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <a href="https://source.unsplash.com/random/563x563" data-toggle="lightbox"
+                        data-gallery="img-gallery" data-height="563" data-width="563">
+                        <img src="https://source.unsplash.com/random/563x563" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://source.unsplash.com/random/565x565" data-toggle="lightbox"
+                        data-gallery="img-gallery" data-height="565" data-width="565">
+                        <img src="https://source.unsplash.com/random/565x565" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://source.unsplash.com/random/566x566" data-toggle="lightbox"
+                        data-gallery="img-gallery" data-height="566" data-width="566">
+                        <img src="https://source.unsplash.com/random/566x566" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </setion>
+    <div class="section text-center p-5 bg-dark text-white" id="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Sign Up For Our NewsLetter</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum nostrum quaerat aspernatur
+                        necessitatibus delectus enim alias recusandae dolores tempore.</p>
+                        <form class="form-inline justify-content-center">
+                            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
+                            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
+                            <button class="btn btn-primary mb-2">Submit</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="modal fade" id="videoModal">
@@ -242,10 +258,10 @@
             interval: 6000,
             pause: 'hover'
         });
-        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
         $(function () {
             $(".video").click(function () {
                 let theModal = $(this).data("target"),
