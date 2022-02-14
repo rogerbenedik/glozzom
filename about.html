@@ -183,6 +183,15 @@
             </div>
         </div>
     </section>
+    <fotter id="main-footer" class="text-center p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &copy; <span id="year"></span> Glozzom</p>
+                </div>
+            </div>
+        </div>
+    </fotter>
 
 
 
@@ -197,7 +206,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
         integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script> $('#year').text(new Date().getFullYear());  </script>
+    <script> $('#year').text(new Date().getFullYear()); 
+    $('.slider').slick({
+        inifite: true,
+        slideToShow:1,
+        slideToScroll:1,
+    }) </script>
 
     </script>
 
